@@ -1,0 +1,43 @@
+<form [formGroup]="formAgendamento" (ngSubmit)="onSubmit()" class="normal-form">
+<mat-grid-list cols="2" rowHeight="300px">
+  <mat-grid-tile>
+    <div class="controller-container">
+      <input type="hidden" formControlName="$key">
+      <mat-form-field>
+        <input formControlName="nome" matInput placeholder="Digite seu nome">
+        <mat-error>Este campo é obrigatório.</mat-error>
+      </mat-form-field>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <div class="controller-container">
+      <div class="add-bottom-padding">
+        <mat-radio-group formControlName="escritorio">
+          <mat-radio-button value="1">São Paulo</mat-radio-button>
+          <mat-radio-button value="2">Santos</mat-radio-button>
+        </mat-radio-group>
+      </div>
+      <mat-form-field>
+        <mat-select formControlName="estacaoTrabalho" placeholder="Estação de trabalho">
+          <mat-option>Nenhum</mat-option>
+          <ng-container *ngFor="let estacaoTrabalho of estacoesTrabalho">
+            <mat-option value="{{estacaoTrabalho.id}}">{{estacaoTrabalho.value}}</mat-option>
+          </ng-container>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field>
+        <input formControlName="dataEscritorio" matInput [matDatepicker]="picker" placeholder="Data de ida ao escritório">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+        <mat-error>A escolha da data é obrigatória.</mat-error>
+      </mat-form-field>
+      <div class="button-row">
+        <button mat-raised-button color="primary" type="submit">Enviar</button>
+        <button mat-raised-button color="warn">Apagar</button>
+      </div>
+    </div>
+  </mat-grid-tile>
+
+</mat-grid-list>
+
+</form>
