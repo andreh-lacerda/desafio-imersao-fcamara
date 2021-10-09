@@ -1,23 +1,7 @@
-.normal-form {
-  margin-right: 1rem;
-  margin-top: 1rem;
-  width: 45%;
-  float: right;
+.mat-radio-button {
+  margin-left: 1rem;
 }
 
-.controller-container {
-  width: 100%;
-  padding: 5%;
-}
-
-.add-bottom-padding {
-  padding-bottom: 0.625rem;
-}
-
-mat-radio-group mat-radio-button {
-  margin-left: 0.313rem;
-}
-
-.button-row button {
-  margin: 0.313rem;
+.mat-raised-button {
+  margin-left: 1rem;
 }

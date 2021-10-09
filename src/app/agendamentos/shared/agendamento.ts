@@ -1,7 +1,7 @@
 export class Agendamento {
-  $id: string = '';
+  _id?: string = '';
   nome: string = '';
-  escritorio: number = 1;
-  dataEscritorio: Date = null;
+  escritorio: string = '';
+  data: Date = null;
   estacaoTrabalho: string = '';
 }

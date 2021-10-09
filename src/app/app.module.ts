@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FlexModule } from '@angular/flex-layout';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -11,6 +12,7 @@ import { HeaderComponent } from './components/template/header/header.component';
 import { MaterialModule } from './material.module';
 import { FormComponent } from './views/form/form.component';
 import { HomeComponent } from './views/home/home.component';
+import { AvisoDialogComponent } from './views/home/aviso-dialog/aviso-dialog.component';
 
 
 @NgModule({
@@ -20,6 +22,7 @@ import { HomeComponent } from './views/home/home.component';
     FooterComponent,
     HomeComponent,
     FormComponent,
+    AvisoDialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,7 +30,8 @@ import { HomeComponent } from './views/home/home.component';
     BrowserAnimationsModule,
     MaterialModule,
     FlexModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
