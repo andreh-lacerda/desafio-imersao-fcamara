@@ -1,27 +1,64 @@
-# DesafioImersaoFcamara
+# Desafio-Imersao-FCamara
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.1.
+<h1>
+  <img src="./src/imersao-dev.gif">
+</h1>
 
-## Development server
+## 🔖 Sobre
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+O projeto foi desenvolvido através do desafio proposto pela empresa **FCamara** em parceria com a **Alura**, onde deveríamos criar uma landing page com agendamento para retorno das atividades presenciais.
 
-## Code scaffolding
+---
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 🚀 Tecnologias utilizadas
 
-## Build
+O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Front End
+- [Angular 12](https://angular.io/)
+- [Angular Material](https://material.angular.io/)
+- [RxJS](https://rxjs.dev/)
 
-## Running unit tests
+### Back End
+- [NodeJs](https://nodejs.org/en/)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Banco de dados
 
-## Running end-to-end tests
+- [MongoDB Community](https://www.mongodb.com/pt-br)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+---
 
-## Further help
+## 📂 Como baixar o projeto
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```bash
+
+  # Clonar o repositório
+  $ git clone https://github.com/andreh-lacerda/desafio-imersao-fcamara.git
+
+  # Entrar no diretório
+  $ cd desafio-imersao-fcamara
+
+  # Instalar as dependências
+  $ npm i
+
+  # Iniciar o projeto
+  $ ng serve
+
+  # Abra o navegador e digite http://localhost:4200
+
+  # Para iniciar o servidor, abra outro terminal e após entrar no diretório desafio-imersao-fcamara, entre no diretório api
+  $ cd api
+
+  # Instalar as dependências
+  $ npm i
+
+  # Iniciar a api
+  $ nodemon run start
+
+  # A api está configurada para a porta http://localhost:9000
+```
+---
+### Observações
+
+- A integração e todas as funcionalidades entre o front end e back end ainda estão em fase inicial de desenvolvimento.
+- Necessário ainda ajustar responsividade para todos tipos de tela.
